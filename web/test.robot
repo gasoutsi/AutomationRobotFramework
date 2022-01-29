@@ -1,5 +1,5 @@
 *** Settings ***
-Library         Selenium2Library     implicit_wait=15
+Library         SeleniumLibrary     implicit_wait=15
 Suite Setup    Open Browser For Test
 Suite Teardown    Close Browser
 

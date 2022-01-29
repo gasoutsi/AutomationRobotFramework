@@ -51,12 +51,12 @@ Test API DR Format Benar And destination_id Empty or Null
     Check Status And Response    status=0    ${resp.text}    200    ${resp}
     Run Keyword If	'${resp.text}' == 'status=0'	Melakukan Pengecekan Databases    ${id}
 
-Test API DR Witout Content Typr
-    ${id}=    Membuat UniqID    
-    &{data}=    Create dictionary  number=123   status=ACCEPTED    message_id=${id}    destination_id=   error_code=000
-    ${resp}=    POST On Session    DR  /DRReceiverDWS/index.jsp  json=${data}  expected_status=anything   
-    Check Status And Response    status=4   ${resp.text}    400    ${resp}
-    Run Keyword If	'${resp.text}' == 'status=0'	Melakukan Pengecekan Databases    ${id}
+# Test API DR Witout Content Typr
+#     ${id}=    Membuat UniqID    
+#     &{data}=    Create dictionary  number=123   status=ACCEPTED    message_id=${id}    destination_id=   error_code=000
+#     ${resp}=    POST On Session    DR  /DRReceiverDWS/index.jsp  json=${data}  expected_status=anything   
+#     Check Status And Response    status=4   ${resp.text}    400    ${resp}
+#     Run Keyword If	'${resp.text}' == 'status=0'	Melakukan Pengecekan Databases    ${id}
     
 *** Keywords ***
 Melakukan Pengecekan Databases

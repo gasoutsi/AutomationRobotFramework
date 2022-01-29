@@ -5,7 +5,7 @@ Suite Teardown    Close Browser
 
 *** Variables ***
 ${url}    https://www.saucedemo.com/
-${browser}    chrome
+${browser}    headlesschrome
 ${delay}    3
 
 *** Test Cases ***
